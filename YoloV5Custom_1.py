@@ -6,7 +6,7 @@ import cv2
 from time import time
 
 
-class BottleDetector:
+class CustomDetector:
     
 
     def __init__(self, capture_index, model_name):
@@ -90,7 +90,7 @@ class BottleDetector:
 alperen='yolov5s.pt'
 alperen="C:/Users/pc/vs_code/Z11_yolo_wx/best2.pt"
 
-detector = BottleDetector(capture_index=0, model_name=alperen)
+detector = CustomDetector(capture_index=0, model_name=alperen)
 detector()
 
 
